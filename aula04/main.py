@@ -1,11 +1,17 @@
-import sys
+import sys 
 from PyQt5.QtWidgets import *
 
-from TelaVeiculo import Telaveiculo
+from TelaVeiculo import TelaVeiculo
+from TelaCarro import TelaCarro
 
-app =   QApplication(sys.argv )
-telaveiculo = Telaveiculo("cadastro de veiculo")
+app = QApplication(sys.argv)
 
-telaveiculo.show()
+#TelaVeiculo
+telaVeiculo = TelaVeiculo("Cadastro de Veículo")
+telaVeiculo.show()
 
-sys.exit(app.exec_() )
+#TelaCarro
+telaCarro = TelaCarro("Cadastro de Carro: ")
+telaCarro.show()
+
+sys.exit(app.exec_())
